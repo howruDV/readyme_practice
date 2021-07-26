@@ -1,0 +1,184 @@
+/*environ set*/
+*{font-family: 'Roboto', sans-serif;}
+body{
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    
+    width: 100%;
+}
+#mainpg_background{
+    margin-left: -60px;
+    max-width: 43%;
+    z-index: -1;
+}
+
+/*contents*/
+.contents{
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 60px;
+    min-width: 57%;
+}
+
+/*contents::user_info*/
+.user_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 400px;
+    background-color: white;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.profile_circle{
+    padding-top: 4px;
+}
+.profile_pic{
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.profile_pic img{
+    width: 47px;
+    height: 47px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+#name{
+    padding-bottom: 1.5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+#state{
+    padding-top: 1.5px;
+    font-size: 10px;
+    color: #ADADAF;
+}
+
+.button_play{
+    display: flex;
+}
+.button_play img{
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+/*contents::index*/
+#index_frame{
+    display: flex;
+    min-width: 400px;
+    background-color: rgba(255,255,255,0.7);
+}
+.index{
+    padding-top: 60px;
+    min-width: 350px;
+}
+#index_left, #index_right{
+    width: 200px;
+    max-width: 160px;
+}
+
+/*contents::index::index1*/
+.index1_movie{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.logo, .title, .movie_info, .movie_des{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title{
+    font-family: 'Lato', sans-serif;
+    font-size: 80px;
+}
+.movie_info{
+    display: flex;
+}
+.star{
+    display: flex;
+    height: fit-content;
+    margin-right:12px;
+}
+.movie_season{
+    display: flex;
+    overflow: hidden;
+    margin-left:12px;
+    margin-right:12px;
+    font-size: 15px;
+}
+#view{
+    color:#F1BD04;
+}
+.movie_des{
+    padding-right:160px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 200%;
+    color:#9E9E9E;
+}
+
+/*contents::index::index2*/
+.index2_button{
+    display: flex;
+    flex-wrap: wrap;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-right: 28px;
+    width: 245px;
+    height: 70px;
+    border-radius: 5px;
+    background: #F9F9F9;
+}
+.button:hover{
+    transition-duration: 0.3s;
+    background: rgb(0, 0, 0);
+}
+.frame_icon, .button p{
+    margin-left: 24px;
+}
+.frame_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+}
+#button_icon{
+    max-width: 23px;
+    max-height: 23px;
+}
+.button p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.button:hover p{
+    transition-duration: 0.3s;
+    color: white;
+}
+.button:active p{
+    color: rgb(255, 8, 0);
+}

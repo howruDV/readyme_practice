@@ -1,0 +1,203 @@
+/*environ set*/
+*{
+    margin:0;
+    font-family: 'Roboto';
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+#loginbg_img{
+    position: absolute;
+    min-width: 103vw;
+    max-height: 103vh;
+    z-index: -1;
+    filter: blur(2px) brightness(90%);
+}
+.body{
+    display:flex;
+    flex-direction: column;
+}
+
+/*page header*/
+.login_head{
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-left: 70px;
+}
+#login_netflix{
+    max-width: 256px;
+    height: auto;
+}
+#title_login{
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/*login*/
+.login_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:22px;
+}
+.login_comp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/*login::text*/
+.login_comp:nth-child(1){
+    flex-direction: row;
+    width: 380px;
+    justify-content: left;
+}
+.join_text{
+    margin-right: 0.3em;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.join_text:nth-child(2):hover{
+    transition-duration: 0.3s;
+    color: #E50914;
+    cursor: pointer;
+}
+
+/*login::input*/
+.login_btn{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.login_btn input{
+    width: 380px;
+    height: 65px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgba(0,0,0, 0.8);
+    padding: 0px 27px;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+}
+.login_btn input:focus{
+    outline: none;
+}
+.login_btn input::-webkit-input-placeholder{
+    text-align: center;
+}
+
+/*login::buttons*/
+#btn_submit{
+    width: 380px;
+    height: 65px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #E50914;
+    padding: 0px 27px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+}
+#btn_submit:hover{
+    transition-duration: 0.3s;
+    background-color: #cf0d17;
+    cursor: pointer;
+}
+#btn_submit:active{
+    background-color: #af0710;
+    cursor:progress;
+}
+#login_sub{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+}
+
+/*login::buttons::checkbox*/
+#sub_left *{
+    margin-bottom: 3px;
+    cursor:pointer;
+}
+#sub_left div{
+    display: flex;
+    justify-content: flex-start;
+}
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"] + label{
+    position: relative;
+    display:inline-block;
+}
+input[type="checkbox"] + label p{
+    margin-left: 20px;
+}
+input[type="checkbox"] + label:before {
+    content:'';
+    position: absolute;
+    border-radius: 2px;
+    width:15px;
+    height:15px;
+    background-color: rgba(0,0,0, 0.8);
+}
+input[type="checkbox"] + label img{
+    display:none;
+    position: absolute;
+    margin-left: -4px;
+    margin-top: -5px;
+    width: 25px;
+    cursor: pointer;
+
+}
+input[type="checkbox"]:checked + label img{
+    display: inline;
+}
+
+#facebook_logo{
+    width: 15px;
+    height: 15px;
+}
+#facebook_text{
+    margin-left: 7px;
+}
+
+#sub_right p{
+    font-weight: 700;
+}
+#sub_right p:hover{
+    transition-duration: 0.2s;
+    color: #E50914;
+    cursor: pointer;
+}
+
+/*page footer*/
+.login_btm{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+}
+#btm_more{
+    margin-left: 5px;
+    font-weight: 700;
+    color: E50914;
+    cursor: pointer;
+}
